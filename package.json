@@ -1,0 +1,27 @@
+{
+  "name": "testchatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpbalda/testChatBot.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jpbalda/testChatBot/issues"
+  },
+  "homepage": "https://github.com/jpbalda/testChatBot#readme",
+  "dependencies": {
+    "apiai": "^4.0.3",
+    "body-parser": "^1.18.2",
+    "config": "^1.28.1",
+    "express": "^4.16.2",
+    "request": "^2.83.0",
+    "uuid": "^3.1.0"
+  }
+}
