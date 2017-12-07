@@ -335,6 +335,7 @@ function sendToBot(senderID, currentUser, message) {
     sessionId: senderID,
   });
 
+  console.log('JP');
   request.on('response', function(response) {
     if (response) {
       console.log(response);
