@@ -314,15 +314,15 @@ function handleMessage(currentUser, senderID, message, isEcho, messageId, appId,
 
   if (messageText) {
 
-    if (messageText.toLowerCase() == 'hola' ||
-      messageText.toLowerCase() == 'hey' ||
-      messageText.toLowerCase() == 'hi') {
+    // if (messageText.toLowerCase() == 'hola' ||
+    //   messageText.toLowerCase() == 'hey' ||
+    //   messageText.toLowerCase() == 'hi') {
 
-      getUsername(senderID);
-    }
-    else {
+    //   getUsername(senderID);
+    // }
+    // else {
       sendToBot(senderID, currentUser, messageText);
-    }
+    // }
   }
   else if (messageAttachments) {
     sendTextMessage(senderID, "Message with attachment received");
@@ -354,10 +354,10 @@ function sendToBot(senderID, currentUser, message) {
           if (action) {
             switch (action) {
               case 'account.balance':
-                getAccountBalance(senderID, parameters.account_type);
+                //getAccountBalance(senderID, parameters.account_type);
                 break;
               case 'account.movement':
-                getAccountMovement(senderID, parameters.account_type);
+                //getAccountMovement(senderID, parameters.account_type);
                 break;
               default:
                 console.log('unknown action...');
